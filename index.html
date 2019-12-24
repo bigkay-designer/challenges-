@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <title>challenges</title>
+</head>
+<body>
+    
+    <main>
+
+        <!--challenge 3 Blackjack-->
+
+        <div class="container3">
+            <h2 class="bj-title">Game : Black jack.</h2>
+            <h3 class="bj-sub-title">Lets play.</h3>
+            <div class="bj-bg">
+                <div class="bj-row1">
+                    <div id="bj-yours">
+                        <h2><span id="bj-yours-id"></span>You: 0</h2>
+                    </div>
+
+                    <div class="md-line"></div>
+
+                    <div id="bj-dealer">
+                        <h2><span id="bj-dealer-id">You: 0</span></h2>
+                    </div>
+                </div>
+
+
+                <div class="bj-row2">
+                    <div class="bj-btns">
+                        <button id="bj-hit-btn">Hit</button>
+                        <button id="bj-stand-btn">Stand</button>
+                        <button id="bj-deal-btn">Deal</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bj-row3">
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+
+                    <tr>
+                        <td><span id="bj-wins">0</span></td>
+                        <td><span id="bj-losses">0</span></td>
+                        <td><span id="bj-draws">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        
+        
+        
+            <!-- challenge 1 html-->
+
+          
+        <div class="container">
+            <h2 class="title"> turning your age into days</h2>
+
+            <button class="run">Click Me</button>
+            <button class="reset">reset</button>
+
+            <p  class="para" id="para"></p>
+        </div>
+
+        <!-- challenge 1 html finished-->
+
+          <!-- challenge 2 grocery list generator-->
+
+        <div class="container2">
+            <h1 class="grocery-title">create your own grocery list.</h1>
+    
+            <input id="gr-input" type="text" placeholder="your data">
+            <button type="submit" id="add-btn">Add to list</button>
+
+            <ol id="odlist"></ol>
+
+        </div>
+        <!--challenge 2 finished-->
+
+        
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

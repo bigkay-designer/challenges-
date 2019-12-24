@@ -1,0 +1,36 @@
+//for loops
+
+for (i = 0 ; i < 'name/function'.length; i++);
+
+//to get nthchild of an element
+
+let 'name/fuunction' = document.querySelector(#(id...) element:nth-child(number));
+
+
+//create an array
+Array.from(name/finction).forEach (function(function anme))
+
+// create innerHTML 
+
+functioname.innerHTML = e.g. <p> text... </p>
+
+
+//removing an element
+
+const functionname = name.target.parentElement;
+
+functioname.parentNode.removeChild(element name);
+
+
+//how to append something in html body
+
+document.body.appendChild(element name);
+
+
+//creating new class 
+
+cosnt functioname = document.createElement(e.g. 'div');
+
+//give id or class to a html element
+
+functioname.setAttripute('id' or 'class', 'name')

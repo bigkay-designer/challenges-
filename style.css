@@ -1,0 +1,229 @@
+/*challenge 1 css*/
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 50%;
+    margin : 50px  auto 50px auto;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.run, .reset{
+    margin: 40px 0;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    text-align:center;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+input{
+    position: relative;
+    left: 60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.run{
+    background-color: lightgreen;
+}
+
+.reset{
+    background-color: lightpink;
+}
+
+.para{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 30px;
+    padding:10px 5px;
+}
+
+
+
+/*finished with challenge 1*/
+
+/*challenge 2 */
+
+.container2{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 50%;
+    margin : 0px  auto 50px auto;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.grocery-title{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+#gr-input{
+    position: relative;
+    left: 20px;
+    padding: 10px;
+}
+
+#add-btn{
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    padding: 7px;
+    margin: 20px 0 10px 0;
+}
+
+            /*challenge 2 finished*/
+
+        /*challenge 3 Black jack*/
+
+
+.container3{
+    position: relative;
+    top: 30px;
+    left: 0px;
+    width: 80%;
+    margin : 0px  auto 50px auto;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.bj-bg{
+    position: relative;
+    bottom: 20px;
+    background: url(images/poker.jpg);
+    height: 300px;
+    border: 3px solid black;
+}
+
+.bj-title{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.bj-sub-title{
+    position: relative;
+    top: -10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+.bj-row1{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "y l d"
+    ;
+    border: 1px solid black;
+    
+}
+
+#bj-yours{
+    position: relative;
+    left: 80px;
+    font-size: 20px;
+    color: white;
+    grid-area: y;
+
+}
+
+.md-line{
+    grid-area: l;
+    border: 2px solid black;
+    width: 0.5px;
+    height: 220px;
+    position: relative;
+    left: 80px;
+}
+
+#bj-dealer{
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+    grid-area: d;
+}
+
+.bj-row2{
+    position: relative;
+    top: 10px;
+}
+
+.bj-btns{
+    text-align: center;
+   ;
+}
+
+#bj-hit-btn{
+    background-color: rgb(70, 117, 219);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#bj-stand-btn{
+    background-color: rgb(179, 219, 70);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#bj-deal-btn{
+    background-color: rgb(219, 70, 95);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.bj-row3{
+    
+    margin: -10px 0 0 0;
+
+    width: 100%;
+    border: 1px solid black;
+     border-radius: 12px;
+}
+
+table{
+    position: relative;
+    left: 180px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 4px 0;
+
+}
+
+
+
+table th,  td{
+    border: 1px solid black;
+    padding: 4px;
+}
