@@ -79,5 +79,70 @@ function list (){
         //challenge 2 finished 
 
 
-        // challenge 3 Blackjacl
+        // challenge 3 Blackjack
+
+
+let bjGame = {
+    'you':{'scoreSpan':'#bj-yours-id', 'div':'#bj-yours', 'score':0},
+    'dealer':{'scoreSpan':'#bj-dealer-id', 'div':'#bj-dealer', 'score':0},
+    'cards' : ['2','3','4','5','6','7','8','9','10','K', 'Q','J','A'],
+    'cardMaps' : {'2': 2,'3':3,'4': 4,'5':5,'6':6,'7':7,'8':8,'9':9,'10':10,'K':10, 'Q':10,'J':10,'A':[1, 11]}
+}
+
+
+
+YOU =bjGame['you'];
+DEALER =bjGame['dealer'];
+
+const btHitSound = new Audio('sounds/swish.m4a')
+
+document.querySelector('#bj-hit-btn').addEventListener('click', bjHitBtn)
+
+document.querySelector('#bj-dealer-btn').addEventListener('click', bjDealBtn )
+
+            // Hit btn main function
+
+function bjHitBtn(){
+    let card = randomCard();
+    console.log(card)
+    showCard(card, YOU)
+
+    updateScore(card, YOU)
+    console.log(updateScore['score'])
+}
+
+        //Generating random number
+
+function randomCard(){
+    let randomIndex = Math.floor(Math.random() * 13);
+    return bjGame['cards'][randomIndex];
+}
+        // show card function
+
+function showCard(card, activePlayer){
+    const cardImage = document.createElement('img');
+    cardImage.src = `bj-images/${card}.png`;
+    cardImage.style.width = '80px'
+    cardImage.style.height = '100px'
+    cardImage.style.paddingRight = '10px'
+    document.querySelector(activePlayer['div']).appendChild(cardImage);
+    btHitSound.play()
+}
+
+        //Deal btn function
+
+function bjDealBtn(){
+    let delIMages = document.querySelector('#bj-yours').querySelectorAll('img');
+    let delIMages2 = document.querySelector('#bj-dealer').querySelectorAll('img');
+    
+    for(i=0; i < delIMages.length; i++){
+        delIMages[i].remove()
+    }
+    for(i=0; i < delIMages2.length; i++){
+        delIMages2[i].remove()
+    }
+}
+function updateScore (card, activePlayer){
+    activePlayer['score']+= bjGame['cardMaps'][card];
+}
 
